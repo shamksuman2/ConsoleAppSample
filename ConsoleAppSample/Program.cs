@@ -28,6 +28,8 @@ namespace ConsoleAppSample
         public static void Main(string[] args)
         {
 
+            NewKeyword n = new NewKeyword();
+            n.MainProgram();
             //GenericProgram prog = new GenericProgram();
             //prog.Main();
             ////BuilderPatternMain prog = new BuilderPatternMain();
@@ -67,11 +69,11 @@ namespace ConsoleAppSample
 
 
 
-            for (int i=0, j = 0; i <= 3 && j <= i ;i++,j++)
-            {
-                Console.Write("*");
-                if(i==j) Console.WriteLine();
-            }
+            //for (int i=0, j = 0; i <= 3 && j <= i ;i++,j++)
+            //{
+            //    Console.Write("*");
+            //    if(i==j) Console.WriteLine();
+            //}
 
             Console.ReadLine();
 
