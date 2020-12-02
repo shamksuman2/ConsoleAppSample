@@ -1,0 +1,6 @@
+﻿Date : 23-04-2020 12:52:34:{message:{siteId:086c547f-6876-4732-a702-79c5a1b407dd,sourceDeviceFuelingPoints:[1],sourceDeviceId:a9ccd610-6b1a-87e2-3595-5fdd834da9ef},type:SiteFuelingPointsChanges,version:1}
+-------------------------------------------------------------
+
+Date : 23-04-2020 12:59:14:{message:{siteId:3dfef21c-ac30-4063-bf49-bdd9d351db07,sourceDeviceFuelingPoints:[1],sourceDeviceId:b7ed4e30-2ea1-7a89-e924-2e0663cb9faf},type:SiteFuelingPointsChanges,version:1}
+-------------------------------------------------------------
+

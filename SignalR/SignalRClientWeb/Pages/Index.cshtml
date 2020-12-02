@@ -1,0 +1,88 @@
+﻿@page
+@*<div class="container">
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-2">User</div>
+            <div class="col-4"><input type="text" id="userInput" /></div>
+        </div>
+        <div class="row">
+            <div class="col-2">Message</div>
+            <div class="col-4"><input type="text" id="messageInput" /></div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-6">
+                <input type="button" id="sendButton" value="Send Message" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>*@
+<div>
+    <section>
+        <!--for demo wrap-->
+        <h1>Chef Genie</h1>
+        <div class="tbl-header">
+        </div>
+        <div class="tbl-content">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                    <tr>
+                        <td>Food Items(°F)</td>
+                    </tr>
+                    <tr>
+                        <td id="txt0"></td>
+                        <td id="txt1"></td>
+                        <td id="txt2"></td>
+                        <td id="txt3"></td>
+                    </tr>
+                    <tr>
+                        <td id="txt4"></td>
+                        <td id="txt5"></td>
+                        <td id="txt6"></td>
+                        <td id="txt7"></td>
+
+                </tr>
+                <tr>
+                    <td>System Parameters(°F)</td>
+                </tr>
+                    <tr>
+                        <td id="txt8"></td>
+                        <td id="txt9"></td>
+                        <td id="txt10"></td>
+                        <td id="txt11"></td>
+                    </tr>
+                    <tr>
+                        <td id="txt12"></td>
+                        <td id="txt13"></td>
+                        <td id="txt14"></td>
+                        <td id="txt15"></td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
