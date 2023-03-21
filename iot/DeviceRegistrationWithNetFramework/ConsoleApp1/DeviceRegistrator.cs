@@ -9,7 +9,7 @@ namespace DeviceRegWithNetFramework
     using System.Linq;
     using System.Threading.Tasks;
     using DeviceRegWithNetFramework.Library;
-    using Dover.Devices.IoTHub;
+    //using Dover.Devices.IoTHub;
     using Flurl.Http;
     //using Microsoft.Azure.Devices.Client;
     //using Microsoft.Azure.Devices.Client.Exceptions;

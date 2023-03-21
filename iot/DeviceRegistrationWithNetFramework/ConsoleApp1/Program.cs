@@ -8,7 +8,6 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
-using Dover.Devices.IoTHub;
 using Flurl.Http;
 using Microsoft.Azure.Devices.Client;
 using Microsoft.Extensions.Logging;

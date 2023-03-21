@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29806.167
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppSample", "ConsoleAppSample\ConsoleAppSample.csproj", "{E1EE0158-3368-4B7A-AFEA-647BA9760F30}"
 EndProject
@@ -80,6 +80,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entity", "Entity", "{09FA4497-D43D-4D8C-919B-1F1BE80E5EF9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console.Entity", "Entity\Console.Entity\Console.Entity.csproj", "{7CD8FEF1-8740-4B61-8EF8-0DC3721B8757}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mongodb", "Mongodb", "{A3272DD2-4269-4D24-BFAF-A37A0AED32DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mongodbsample", "Mongodb\mongodbsample\mongodbsample.csproj", "{08ED11EC-3A06-4E6B-876C-F366EEBB2F96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -179,6 +183,10 @@ Global
 		{7CD8FEF1-8740-4B61-8EF8-0DC3721B8757}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CD8FEF1-8740-4B61-8EF8-0DC3721B8757}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CD8FEF1-8740-4B61-8EF8-0DC3721B8757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08ED11EC-3A06-4E6B-876C-F366EEBB2F96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08ED11EC-3A06-4E6B-876C-F366EEBB2F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08ED11EC-3A06-4E6B-876C-F366EEBB2F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08ED11EC-3A06-4E6B-876C-F366EEBB2F96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -209,6 +217,7 @@ Global
 		{DC9023CB-1048-4D6B-8FD6-A2CBCB610558} = {6A252F72-2872-466B-82F4-A561634AA59F}
 		{5E5339B6-7998-4A84-92D0-01C8B2DDBA2C} = {6A252F72-2872-466B-82F4-A561634AA59F}
 		{7CD8FEF1-8740-4B61-8EF8-0DC3721B8757} = {09FA4497-D43D-4D8C-919B-1F1BE80E5EF9}
+		{08ED11EC-3A06-4E6B-876C-F366EEBB2F96} = {A3272DD2-4269-4D24-BFAF-A37A0AED32DB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {10665EC4-1C7B-473F-B8A6-D5E1DF865F8E}
