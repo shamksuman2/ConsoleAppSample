@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "ServiceBusReceiver1": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:61838;http://localhost:61839"
+    }
+  }
+}
