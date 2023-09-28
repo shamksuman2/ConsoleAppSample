@@ -18,6 +18,7 @@ using Newtonsoft.Json;
 //using WorkflowCore.Services;
 using ConsoleAppSample.TPL;
 using ConsoleAppSample.PubSubPattern;
+using IronPython.Runtime;
 
 namespace ConsoleAppSample
 {
@@ -27,9 +28,20 @@ namespace ConsoleAppSample
 
         public static void Main(string[] args)
         {
+            while (true)
+            {
 
-            NewKeyword n = new NewKeyword();
-            n.MainProgram();
+                var encodedText = Console.ReadLine();
+                var decodedBytes = Convert.FromBase64String(encodedText);
+                string decodedString = Encoding.UTF8.GetString(decodedBytes);
+                Console.WriteLine(decodedString);
+                //Encoding.UTF8.GetString("s", 0, encodedText.Length);
+
+                Console.WriteLine(Convert.ToByte(encodedText));
+            }
+
+            //NewKeyword n = new NewKeyword();
+            //n.MainProgram();
             //GenericProgram prog = new GenericProgram();
             //prog.Main();
             ////BuilderPatternMain prog = new BuilderPatternMain();

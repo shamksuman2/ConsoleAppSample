@@ -35,7 +35,7 @@ namespace WordToPDFConverter
             // Close the document  
             document.Close();
             // Close the writer instance  
-            writer.Close();
+            //writer.Close();
             // Always close open filehandles explicity  
             fs.Close();
             // Display a message indicating that the conversion was successful.

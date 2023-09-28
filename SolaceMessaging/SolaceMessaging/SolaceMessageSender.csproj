@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -8,15 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Program.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Include="C:\Users\ZZU2KOR\OneDrive - Bosch Group\tryouts\git source\ConsoleAppSample\SolaceMessaging\SolaceMessageSender\Program-Http.cs" Link="Program-Http.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="SolaceSystems.Solclient.Messaging" Version="10.20.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DigiCertGlobalRootCA.crt.pem">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

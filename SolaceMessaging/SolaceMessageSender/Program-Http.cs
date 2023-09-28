@@ -4,7 +4,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-class Program
+class Program1
 {
     static async Task Main(string[] args)
     {
@@ -13,8 +13,8 @@ class Program
         //string password = "21atvu2kvfqt83okvnqhp2r53d";
 
         string username = "solace-cloud-client";
-        string password = "pflp78r0u6ej8q7hntd7l4ncqp";
-        string url = "https://mr-connection-l7ua5om65da.messaging.solace.cloud:9443";
+        string password = "2ab9ftihbqtc62l3gt3uaes8i3";
+        string url = "https://mr-connection-jbjyb4jyycs.messaging.solace.cloud:9443/Queue/boschcar";
         string messagePayload = "Hello, Solace from Visual Studio!";
 
 

@@ -29,8 +29,8 @@ class TopicSubscriber : IDisposable
                 {
                     VPNName = "solace1sttryout",
                     UserName = "solace-cloud-client",
-                    Password = "pflp78r0u6ej8q7hntd7l4ncqp"
-                })
+                    Password = "2ab9ftihbqtc62l3gt3uaes8i3"
+            })
                 {
                     //"wss://mr-connection-l7ua5om65da.messaging.solace.cloud:443"
                     // Run the application within the context and against the host
