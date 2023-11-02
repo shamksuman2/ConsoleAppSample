@@ -21,7 +21,7 @@ namespace bt_cam
             string name = req.Query["name"];
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             //object data = JsonConvert.DeserializeObject(requestBody);
-            name = name ?? requestBody;
+            name = name ?? (!string.IsNullOrEmpty(requestBody) ? requestBody.ToString() + "1 " : requestBody + "2");
             log.LogInformation($"Cam1 message {name}");
             return new OkObjectResult(name);
         }

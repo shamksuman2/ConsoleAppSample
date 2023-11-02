@@ -21,6 +21,7 @@
 
 using System;
 using System.Text;
+using Newtonsoft.Json;
 using SolaceSystems.Solclient.Messaging;
 
 /// <summary>
@@ -54,7 +55,10 @@ namespace Tutorial
                 //SSLClientCertificateFile = sslFile
             };
 
+            try
+            {
 
+            
             // Connect to the Solace messaging router
             Console.WriteLine("Connecting as {0}@{1} on {2}...", UserName, VPNName, host);
             using (ISession session = context.CreateSession(sessionProps, null, null))
@@ -70,6 +74,11 @@ namespace Tutorial
                     Console.WriteLine("Error connecting, return code: {0}", returnCode);
                 }
             }
+            }
+            catch (Exception ex)
+            {
+                WriteToFile(JsonConvert.SerializeObject(ex));
+            }
         }
 
         private void PublishMessage(ISession session)
@@ -77,9 +86,9 @@ namespace Tutorial
             // Create the message
             using (IMessage message = ContextFactory.Instance.CreateMessage())
             {
-                message.Destination = ContextFactory.Instance.CreateTopic("tutorial/topic");
+                message.Destination = ContextFactory.Instance.CreateTopic("try-me");
                 // Create the message content as a binary attachment
-                message.BinaryAttachment = Encoding.ASCII.GetBytes("Sample Message");
+                message.BinaryAttachment = Encoding.ASCII.GetBytes("Sample Message visual studio");
 
                 // Publish the message to the topic on the Solace messaging router
                 Console.WriteLine("Publishing message...");
@@ -101,7 +110,7 @@ namespace Tutorial
            
             string proxy = "httpc://rb-proxy-de.bosch.com:8080";
             string host = $"tcps://mr-connection-8cbir63661i.messaging.solace.cloud:55443";//%{proxy}";
-            string username = "solace-cloud-client";
+            string username = "emb-aws-d-v020-dessoldev-admin";
             string vpnname = "emb-aws-d-v020-dessoldev";
             string password = "21atvu2kvfqt83okvnqhp2r53d";
 
@@ -128,12 +137,12 @@ namespace Tutorial
 
                     // Run the application within the context and against the host
                     topicPublisher.Run(context, host);
-
+                    
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Exception thrown: {0}", ex.Message);
+                WriteToFile($"Exception thrown: {ex.Message}");
             }
             finally
             {
@@ -143,6 +152,15 @@ namespace Tutorial
             Console.WriteLine("Finished.");
         }
 
+        private static void WriteToFile(string data)
+        {
+            var path = @"C:\log\log.txt";
+            using (var fs = new FileStream(path, FileMode.Append, FileAccess.Write, FileShare.ReadWrite))
+            using (var sw = new StreamWriter(fs))
+            {
+                sw.WriteLine(data + Environment.NewLine + "-------------------------------------------------------------" + Environment.NewLine);
+            }
+        }
         #endregion
     }
 
