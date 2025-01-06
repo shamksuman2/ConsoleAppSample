@@ -125,7 +125,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wsdlprogram", "wsdlprogram"
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WCFServiceOnvif", "bt_camera\wsdlprogram\WCFServiceOnvif\", "{98162A49-CD5F-4E20-98ED-760ED30B809A}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8.1"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_59048"
 		Debug.AspNetCompiler.PhysicalPath = "bt_camera\wsdlprogram\WCFServiceOnvif\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59048\"
@@ -153,6 +153,13 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wsdlonvifapp", "bt_camera\wsdlprogram\wsdlonvifapp\wsdlonvifapp.csproj", "{C937801D-F605-4545-8188-699E4F437946}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncAppEventHubSignlaR", "AzureFunction\FuncAppEventHubSignlaR\FuncAppEventHubSignlaR.csproj", "{2986B16A-788B-47D8-9FA9-43D710E26083}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "designpattern", "designpattern", "{8D05A574-36F4-4DA8-978A-9FAFCFEEA89F}"
+	ProjectSection(SolutionItems) = preProject
+		builder.cs = builder.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "designpattern", "designpattern\designpattern\designpattern.csproj", "{05EA443D-23B9-4A11-8FC0-818F7D79ABCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -312,6 +319,10 @@ Global
 		{2986B16A-788B-47D8-9FA9-43D710E26083}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2986B16A-788B-47D8-9FA9-43D710E26083}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2986B16A-788B-47D8-9FA9-43D710E26083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05EA443D-23B9-4A11-8FC0-818F7D79ABCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05EA443D-23B9-4A11-8FC0-818F7D79ABCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05EA443D-23B9-4A11-8FC0-818F7D79ABCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05EA443D-23B9-4A11-8FC0-818F7D79ABCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -360,6 +371,7 @@ Global
 		{6420D565-0E16-4EBD-ACB0-130E41A8F207} = {BB9D4671-1DEC-44EA-B0F7-C24D85B28FD3}
 		{C937801D-F605-4545-8188-699E4F437946} = {BB9D4671-1DEC-44EA-B0F7-C24D85B28FD3}
 		{2986B16A-788B-47D8-9FA9-43D710E26083} = {C7D3EBDA-6C92-4F75-B950-1D9A52D91E29}
+		{05EA443D-23B9-4A11-8FC0-818F7D79ABCF} = {8D05A574-36F4-4DA8-978A-9FAFCFEEA89F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {10665EC4-1C7B-473F-B8A6-D5E1DF865F8E}
